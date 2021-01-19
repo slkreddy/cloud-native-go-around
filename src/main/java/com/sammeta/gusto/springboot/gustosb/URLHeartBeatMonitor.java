@@ -1,6 +1,5 @@
 package com.sammeta.gusto.springboot.gustosb;
 
-import java.io.IOError;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
