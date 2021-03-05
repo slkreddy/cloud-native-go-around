@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: istio-system
+---
+apiVersion: install.istio.io/vlalphal
+kind: IstioOperator
+metadata:
+  namespace: istio-system
+  name: demo-istio-install
+spec:
+  profile: demo
