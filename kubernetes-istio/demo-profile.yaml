@@ -10,3 +10,4 @@ metadata:
   name: demo-istio-install
 spec:
   profile: demo
+  
