@@ -1,3 +1,4 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -9,9 +10,9 @@ spec:
     matchLabels:
       app: sb
     template:
-      metadata:
-        labels:
-          app: sb
+     metadata:
+       labels:
+         app: sb
     spec:
       containers:
       - name: sb-gusto
