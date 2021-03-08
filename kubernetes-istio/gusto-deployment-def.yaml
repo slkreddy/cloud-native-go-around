@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sb-gusto
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sb
+    template:
+      metadata:
+        labels:
+          app: sb
+    spec:
+      containers:
+      - name: sb-gusto
+        image: slkreddysite/gustosb:latest
+
+
+   
