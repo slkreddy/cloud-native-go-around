@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gusto-sb-deployment
+  labels:
+    app: sb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sb
+  template:
+    metadata:
+      labels:
+        app: sb
+    spec:
+      containers:
+      - name: gusto-sb
+        image: slkreddysite/gustosb:latest

@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: sb-gusto
+  name: gusto-sb
   namespace: default
 spec:
   type: NodePort
