@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - name: gusto-sb
-        image: slkreddysite/gustosb:latest
+        image: slkreddysite/gustosb:1.0.1

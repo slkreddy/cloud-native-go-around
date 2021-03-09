@@ -22,6 +22,7 @@ public class URLHeartBeatMonitor{
 		String returnMsg = "";
 		String respMessage = "";
 		try {
+			System.out.println("The URL to monitor is: "+url);
 			URL urlObj = new URL(url);
 			HttpURLConnection conn = (HttpURLConnection) urlObj.openConnection();
 			conn.setRequestMethod("GET");
@@ -40,6 +41,7 @@ public class URLHeartBeatMonitor{
 			returnMsg = String.format(template_failure, url, "DOWN", respMessage);
 		}
 		
+		System.out.println("The result of the URL heartbeat check: "+ returnMsg);
 		return returnMsg;
 	}
 }
