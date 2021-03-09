@@ -17,3 +17,27 @@ kubernetes-istio
 
 
 Dockerfile: this creates the docker image in local with required dependencies
+
+
+
+kubernetes commands:
+1. To start the minikube
+(base) LaxmiKumars-Air:~ laxmikumar$ minikube start
+
+2. To start the minikube dashboard (optional)
+(base) LaxmiKumars-Air:~ laxmikumar$ minikube dashboard
+
+3. To deploy the app into pod (make sure the defs dir exists and to copy the the yaml file into it)
+(base) LaxmiKumars-Air:~ laxmikumar$ kubectl create -f defs/gusto-deloyment-def.yaml
+
+4. To expose the app as accessible endpoint (make sure the defs dir exists and to copy the the yaml file into it)
+(base) LaxmiKumars-Air:~ laxmikumar$ kubectl create -f defs/service-def.yaml
+
+5. To know the exact endpoint to access the api
+(base) LaxmiKumars-Air:~ minikube service gusto-sb --url
+
+6. To see the logs of the pod
+(base) LaxmiKumars-Air:~ kubectl get pod
+Copy the name of the pod
+(base) LaxmiKumars-Air:~ kubectl logs <Name of the pod>
+
