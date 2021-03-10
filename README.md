@@ -1,5 +1,12 @@
 # cloud-native-go-around
-Gusto exploration around Cloud Native Principles leveraging Kubernetes, Spring-Boot, Istio and other tools 
+Gusto exploration around Cloud Native Principles 
+TechStack:
+Spring-Boot, 
+Kubernetes,
+Istio, 
+Grafana, 
+Kaili, 
+Zipkin, gRPC and other tools 
 
 Project: gusto-sb : a Spring boot application that checks the health of given 'URL'. 
 Rest end point:
