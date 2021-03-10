@@ -34,11 +34,11 @@ kubernetes commands:
 2. To start the minikube dashboard (optional)
 (base) LaxmiKumars-Air:~ laxmikumar$ minikube dashboard
 
-3. To deploy the app into pod (make sure the defs dir exists and to copy the the yaml file into it)
-(base) LaxmiKumars-Air:~ laxmikumar$ kubectl create -f defs/gusto-deloyment-def.yaml
+3. To deploy the app into pod (The defs dir exists and to copy the the yaml file into it if you want to access it from local)
+(base) LaxmiKumars-Air:~ laxmikumar$ kubectl apply -f https://raw.githubusercontent.com/slkreddy/cloud-native-go-around/master/kubernetes-istio/deployment/gusto-deployment-def.yaml
 
-4. To expose the app as accessible endpoint (make sure the defs dir exists and to copy the the yaml file into it)
-(base) LaxmiKumars-Air:~ laxmikumar$ kubectl create -f defs/service-def.yaml
+4. To expose the app as accessible endpoint (The defs dir exists and to copy the the yaml file into it if you want to access it from local)
+(base) LaxmiKumars-Air:~ laxmikumar$ kubectl create -f https://raw.githubusercontent.com/slkreddy/cloud-native-go-around/master/kubernetes-istio/service/service-def.yaml
 
 5. To know the exact endpoint to access the api
 (base) LaxmiKumars-Air:~ minikube service gusto-sb --url
