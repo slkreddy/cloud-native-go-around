@@ -6,7 +6,8 @@ Kubernetes,
 Istio, 
 Grafana, 
 Kaili, 
-Zipkin, gRPC and other tools 
+Zipkin, gRPC and other tools
+
 
 Project: gusto-sb : a Spring boot application that checks the health of given 'URL'. 
 Rest end point:
