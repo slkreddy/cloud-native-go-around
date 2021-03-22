@@ -42,6 +42,7 @@ public class URLHeartBeatMonitor{
 		}
 		
 		System.out.println("The result of the URL heartbeat check: "+ returnMsg);
+		
 		return returnMsg;
 	}
 }
