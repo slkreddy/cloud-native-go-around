@@ -6,7 +6,8 @@ Kubernetes,
 Istio, 
 Grafana, 
 Kaili, 
-Zipkin, gRPC and other tools
+Zipkin and other tools
+
 
 
 
